@@ -16,15 +16,12 @@ const routes: Routes = [
   { path: '**', redirectTo: '/products', pathMatch: 'full' },
 ];
 @NgModule({
-  declarations: [
-    AppComponent, 
-    ProductListComponent
-  ],
+  declarations: [AppComponent, ProductListComponent],
   imports: [
-    BrowserModule, 
-    AppRoutingModule, 
+    BrowserModule,
+    AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
   ],
   providers: [ProductService],
   bootstrap: [AppComponent],
