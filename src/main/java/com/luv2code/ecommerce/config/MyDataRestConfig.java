@@ -31,5 +31,6 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
                 .forDomainType(ProductCategory.class)
                 .withItemExposure(((metdata, httpMethods) -> httpMethods.disable(theUnSupportedActions)))
                 .withCollectionExposure(((metdata, httpMethods) -> httpMethods.disable(theUnSupportedActions)));
+
     }
 }
