@@ -1,6 +1,5 @@
 package com.luv2code.ecommerce.entity;
 
-
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import jakarta.persistence.*;
 import lombok.Data;
