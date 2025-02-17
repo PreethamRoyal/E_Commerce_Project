@@ -1,6 +1,7 @@
 package com.luv2code.ecommerce.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
@@ -12,6 +13,7 @@ import java.util.Date;
 @Entity
 @Table(name="product")
 @Data
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY) //Included This Annotation As Because Facing Lombok Issue In IntelliJ Idea IDE
 public class Product {
 
     @Id
